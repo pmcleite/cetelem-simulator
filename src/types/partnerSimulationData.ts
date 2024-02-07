@@ -1,5 +1,5 @@
 export interface PartnerSimulationDataType {
-    syncDate?: Date
+  syncDate?: Date
 }
 
 export default PartnerSimulationDataType

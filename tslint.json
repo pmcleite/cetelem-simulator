@@ -1,24 +1,17 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "semicolon": [true, "always"],
+    "quotemark": [true, "single"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
     ],
-    "rules": {
-        "semicolon": [
-            true,
-            "always"
-        ],
-        "quotemark": [
-            true,
-            "single"
-        ],
-        "trailing-comma": [
-            true,
-            {
-                "multiline": "always",
-                "singleline": "never"
-            }
-        ]
-    },
-    "jsRules": {}
+    "indent": [true, "spaces", 2]
+  },
+  "jsRules": {}
 }

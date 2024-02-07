@@ -6,9 +6,12 @@ import { getSimulationData } from '../controllers/partnerSimulationDataControlle
 const router = Router()
 
 router.get(
-    '/interests/distribution/v1.1/simulations/:syncDate',
-    validateSchema<PartnerSimulationDataType>(partnerSimulationDataSchema, 'params'),
-    getSimulationData,
+  '/interests/distribution/v1.1/simulations/:syncDate',
+  validateSchema<PartnerSimulationDataType>(
+    partnerSimulationDataSchema,
+    'params',
+  ),
+  getSimulationData,
 )
 
 export default router
