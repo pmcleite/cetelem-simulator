@@ -4,7 +4,7 @@ import { ObjectSchema } from 'joi'
 function validateSchema<T>(
   schema: ObjectSchema<T>,
   type: 'body' | 'query' | 'params' = 'body',
-) {
+): (req: Request, res: Response, next: Function) => void {
   return (req: Request, res: Response, next: Function) => {
     const { error } = schema.validate(req[type])
     if (!req[type]) {

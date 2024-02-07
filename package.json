@@ -6,13 +6,20 @@
   "scripts": {
     "build": "tsc",
     "start": "nodemon --exec 'npm run build && node dist/index.js'",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "eslint src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.10",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-jsdoc": "^48.0.6",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
     "tslint": "^6.1.3",
