@@ -7,7 +7,7 @@ import { prospectErrorCodes } from '../constants'
 
 const router = Router()
 
-const getErrorMessage = () => prospectErrorCodes[0]
+const getErrorMessage = () => prospectErrorCodes[1]
 
 // Registers a customer proposal from the internet.
 // Must be used on the Identification form block to check if the client has any ongoing credit proposal.
