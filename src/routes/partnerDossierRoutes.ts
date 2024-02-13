@@ -6,6 +6,7 @@ import { createPartnerDossier, getPartnerDossier } from '../controllers/partnerD
 
 const router = Router()
 
+// Submits a credit proposal
 router.get(
   '/contractSignUp/distribution/v2.0/subscriptionRecord/getDummy',
   getPartnerDossier,

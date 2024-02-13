@@ -5,6 +5,7 @@ import { PartnerSimulationDataRequestType } from '../types/partnerSimulationData
 import { getSimulationData } from '../controllers/partnerSimulationDataControllers'
 const router = Router()
 
+// Retrieves a Simulation Data object
 router.get(
   '/interests/distribution/v1.1/simulations/:syncDate',
   validateSchema<PartnerSimulationDataRequestType>(
