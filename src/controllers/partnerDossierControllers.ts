@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 import dummyDossierData from '../data/dossierData'
-import { PartnerDossierRequestType } from '../types/partnerDossier'
+import dummyDossierDataResponse from '../data/dossierDataResponse'
+import { PartnerDossierRequestType, PartnerDossierResponseType } from '../types/partnerDossier'
 
 export const getPartnerDossier = (
   req: Request<null>,
@@ -11,7 +12,7 @@ export const getPartnerDossier = (
 
 export const createPartnerDossier = (
   req: Request<any, any, PartnerDossierRequestType>,
-  res: Response<string>,
+  res: Response<PartnerDossierResponseType>,
 ) => {
-  res.send(JSON.stringify(req.body))
+  res.send(dummyDossierDataResponse)
 }

@@ -1,3 +1,8 @@
+import { dossierStatusCodes, validationMessageTypes } from '../constants'
+
+export type DossierStatusCodes = typeof dossierStatusCodes[number]
+export type ValidationMessageTypes = typeof validationMessageTypes[number]
+
 export interface PartnerDossierPersonsRelationship {
   code: string,
 }
@@ -146,7 +151,7 @@ export interface PartnerDossierAutomaticFinancing {
   hasAutomaticFinancing: boolean,
   requireDeliveryDate: boolean,
   requireInvoiceNumber: boolean,
-  RequireProvisionalCardNumber: boolean,
+  requireProvisionalCardNumber: boolean,
 }
 
 export interface PartnerDossierStatus {
@@ -181,7 +186,7 @@ export interface PartnerDossierSubmissionResult {
 export interface ValidationMessage {
   code: string,
   message: string,
-  type: string,
+  type: ValidationMessageTypes,
   label: string,
 }
 
