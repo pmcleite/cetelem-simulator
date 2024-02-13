@@ -42,3 +42,5 @@ export const dummySimulationData: SimulationData = {
     },
   },
 }
+
+export default dummySimulationData
