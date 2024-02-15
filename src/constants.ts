@@ -1,10 +1,12 @@
+import { ERRORS } from './errors'
+
 export const validationMessageTypes = ['E', 'W', 'I'] as const
 export const dossierStatusCodes = ['SUBMITTED_ACCEPTED', 'SUBMITTED_STUDY', 'SUBMITTED_REFUSED'] as const
-export const prospectErrorCodes = ['PERR0001', 'PERR0002']
-export const identifyClientErrorCodes = ['PERR0001', 'PERR0002', 'PERR2001']
-export const customerPersonalDataErrorCodes = ['PERR0001', 'PERR0002', 'PERR2001', 'PERR1003', 'PERR1002']
-export const customerDossierListErrorCodes = ['PERR0001', 'PERR0002']
-export const dossiersCustomerDetailListErrorCodes = ['PERR0001', 'PERR0002']
-export const dossierNumbersErrorCodes = ['PERR0001', 'PERR0002', 'PERR2005']
-export const documentsErrorCodes = ['PERR0001', 'PERR0002', 'PERR2005']
+export const prospectErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS]
+export const identifyClientErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS, ERRORS.CLIENT_NOT_FOUND]
+export const customerPersonalDataErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS, ERRORS.CLIENT_NOT_FOUND, ERRORS.EXPIRED_TOKEN, ERRORS.UNAUTHORIZED_TOKEN]
+export const customerDossierListErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS]
+export const dossiersCustomerDetailListErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS]
+export const dossierNumbersErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS, ERRORS.DOSSIER_NOT_FOUND]
+export const documentsErrorCodes = [ERRORS.GENERIC_ERROR, ERRORS.INVALID_INPUT_PARAMETERS, ERRORS.DOSSIER_NOT_FOUND]
 export const documentsEsignErrorCodes = ['DOSS101', 'DOSS102', 'DOSS103', 'DOSS104', 'DOSS105', 'DOSS106']
