@@ -4,6 +4,7 @@ import partnerDossierRoutes from './partnerDossierRoutes'
 import registerProspectRoutes from './registerProspectRoutes'
 import identifyClientRoutes from './identifyClientRoutes'
 import customerPersonalDataRoutes from './customerPersonalDataRoutes'
+import partnerFinRoutes from './partnerFinRoutes'
 
 const router = Router()
 router.use(
@@ -12,6 +13,7 @@ router.use(
   registerProspectRoutes,
   identifyClientRoutes,
   customerPersonalDataRoutes,
+  partnerFinRoutes,
 )
 
 export default router
