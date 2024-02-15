@@ -6,3 +6,5 @@ export const customerPersonalDataErrorCodes = ['PERR0001', 'PERR0002', 'PERR2001
 export const customerDossierListErrorCodes = ['PERR0001', 'PERR0002']
 export const dossiersCustomerDetailListErrorCodes = ['PERR0001', 'PERR0002']
 export const dossierNumbersErrorCodes = ['PERR0001', 'PERR0002', 'PERR2005']
+export const documentsErrorCodes = ['PERR0001', 'PERR0002', 'PERR2005']
+export const documentsEsignErrorCodes = ['DOSS101', 'DOSS102', 'DOSS103', 'DOSS104', 'DOSS105', 'DOSS106']
