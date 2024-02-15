@@ -1,7 +1,11 @@
+import { customerPersonalDataErrorCodes } from '../constants'
+
 export interface CustomerPersonalDataRequestType {
   token: string,
   fiscalNumber: string,
 }
+
+export type CustomerPersonalDataErrorCode = typeof customerPersonalDataErrorCodes[number]
 
 export interface DossierPersonalData { // TODO pmcleite: Confirmar o tipo porque não existe no PDF
   address: string,
