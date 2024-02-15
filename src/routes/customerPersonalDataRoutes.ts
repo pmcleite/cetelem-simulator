@@ -4,6 +4,7 @@ import customerPersonalDataSchema from '../validators/customerPersonalDataSchema
 import { CustomerPersonalDataRequestType } from '../types/customerPersonalData'
 import { customerPersonalData } from '../controllers/customerPersonalDataControllers'
 import { customerPersonalDataErrorCodes } from '../constants'
+import { STATIC_ROUTES } from './cetelemRoutes'
 
 const router = Router()
 
@@ -11,7 +12,7 @@ const getErrorMessage = () => customerPersonalDataErrorCodes[1]
 
 // Retrieves a client’s personal information, used to prefill the form.
 router.get(
-  '/contractSignUp/distribution/v1.0/subscriptionRecord/client/data',
+  STATIC_ROUTES.CUSTOMER_PERSONAL_DATA,
   validateSchema<CustomerPersonalDataRequestType>(customerPersonalDataSchema, 'body', getErrorMessage),
   customerPersonalData,
 )

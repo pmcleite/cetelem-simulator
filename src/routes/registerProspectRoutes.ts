@@ -4,6 +4,7 @@ import { registerProspect } from '../controllers/registerProspectControllers'
 import registerProspectSchema from '../validators/registerProspectSchema'
 import { RegisterProspectRequestType } from '../types/registerProspect'
 import { prospectErrorCodes } from '../constants'
+import { STATIC_ROUTES } from './cetelemRoutes'
 
 const router = Router()
 
@@ -12,7 +13,7 @@ const getErrorMessage = () => prospectErrorCodes[1]
 // Registers a customer proposal from the internet.
 // Must be used on the Identification form block to check if the client has any ongoing credit proposal.
 router.post(
-  '/contractSignUp/distribution/v1.1/subscriptionRecord/prospect',
+  STATIC_ROUTES.REGISTER_PROSPECT,
   validateSchema<RegisterProspectRequestType>(registerProspectSchema, 'body', getErrorMessage),
   registerProspect,
 )
