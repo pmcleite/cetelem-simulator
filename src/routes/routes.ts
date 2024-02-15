@@ -7,6 +7,7 @@ import customerPersonalDataRoutes from './customerPersonalDataRoutes'
 import partnerFinRoutes from './partnerFinRoutes'
 import customerDossierListRoutes from './customerDossierListRoutes'
 import dossiersCustomerDetailRoutes from './dossiersCustomerDetailRoutes'
+import dossierNumbersRoutes from './dossierNumbersRoutes'
 
 const router = Router()
 router.use(
@@ -18,6 +19,7 @@ router.use(
   partnerFinRoutes,
   customerDossierListRoutes,
   dossiersCustomerDetailRoutes,
+  dossierNumbersRoutes,
 )
 
 export default router
